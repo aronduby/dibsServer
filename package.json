@@ -1,0 +1,24 @@
+{
+  "name": "dibs-server",
+  "version": "1.0.0",
+  "description": "node/redis backend server for [spOctopus](https://github.com/aronduby/spOctopus)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aronduby/dibsServer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aronduby/dibsServer/issues"
+  },
+  "homepage": "https://github.com/aronduby/dibsServer#readme",
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "redis": "^2.6.2",
+    "socketio": "^1.0.0"
+  }
+}
