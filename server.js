@@ -47,6 +47,7 @@ dibsIO.on('connection', function(socket) {
     items.forEach(function(item) {
       item.Name = user.DisplayName;
       item.Full = true;
+      item.Created_At = new Date();
       commands.push(['hmset', makeKey([item.EnvironmentId, item.ProjectId]), item]);
     });
 
@@ -83,5 +84,5 @@ function makeKey(parts) {
   if (!_.isArray(parts)) {
     parts = [parts];
   }
-  return config.redis.prefix + '.' + parts.join('.');
+  return config.redis.prefix + ':' + parts.join(':');
 }
